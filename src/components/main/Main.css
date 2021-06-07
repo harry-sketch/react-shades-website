@@ -1,0 +1,15 @@
+.main{
+    position: relative;
+    margin:0 auto 0 auto;
+    padding:0 0 1rem 0;
+}
+.main::before{
+    position: absolute;
+    content: "";
+    background-color: #131313;
+    height:100%;
+    width:100%;
+    top:0;
+    z-index:-1;
+    left:0;
+}

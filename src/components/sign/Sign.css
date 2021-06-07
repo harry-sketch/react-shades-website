@@ -1,0 +1,90 @@
+.sign{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-gap: 2rem;
+    margin: 1rem auto;
+    padding: 1rem 4rem;
+}
+.sign__first{
+    position: relative;
+    display: flex;
+    margin:0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign__first img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+.sign__icon{
+    position: absolute;
+}
+.sign__icon .MuiSvgIcon-root{
+    text-align: center;
+    color:#fff;
+    font-size: 10rem;
+}
+.sign__second{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.sign__second > h2{
+    color:#fff;
+    font-size:2rem;
+    letter-spacing: 2px;
+    font-weight:800;
+}
+
+.sign__second > h1{
+    background: chocolate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-family: "Sigmar One";
+    font-weight:600;
+}
+.sign__second a{
+    text-decoration: none;
+    padding:1.3rem 2.5rem;
+    background: chocolate;
+    border:none;
+    outline: none;
+    color:#fff;
+    font-size:1.3rem;
+    font-weight: 700;
+    transition: all 500ms ease-in ;
+}
+
+.sign__second a:hover{
+    transition: all 500ms ease-in ;
+    background: #a80077;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #66ff00, #a80077);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #66ff00, #a80077); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+/* Responsive */
+
+
+@media screen and (max-width:962px) {
+    .sign{
+        padding:1rem 2rem;
+        grid-template-columns: repeat(1,minmax(0,1fr) );
+    }
+    .sign__second h1{
+       font-size: 2.5rem;
+    }
+    
+}
+
+@media screen and (max-width:320px) {
+    .sign__second h1{
+        font-size: 2rem;
+     }
+}

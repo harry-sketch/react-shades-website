@@ -1,0 +1,37 @@
+.intro{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    grid-gap:2rem;
+    margin:0 auto;
+    padding:1rem 2rem;
+}
+.intro__heading{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size:1.4rem;
+    font-weight:800;
+    color:#fff;
+    margin:0.4rem 0 0.5rem 0;
+}
+.intro__heading span{
+    background-color: #179ae0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-size:2rem;
+    font-family: "Sigmar One", cursive;
+    font-weight:600;
+}
+
+/* Responsive */
+
+@media screen and (max-width:800px) {
+    .intro{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+@media screen and (max-width:500px) {
+    .intro{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+}

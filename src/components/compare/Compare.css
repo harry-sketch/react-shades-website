@@ -1,0 +1,196 @@
+.compare {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 2rem;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+.compare__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.compare__left > h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.compare__left > h1 {
+  margin: 0;
+  background-color: #b000dc;
+  font-size: 5rem;
+  font-family: "Sigmar One", cursive;
+  font-weight: 600;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.compare__left a {
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 1.2rem 2.5rem;
+  background: #fc4a1a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #f7b733,
+    #fc4a1a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f7b733, #fc4a1a);
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 1.4rem;
+  transition: all 500ms ease;
+}
+.compare__left a:hover {
+  transition: all 500ms ease;
+  background: #b92b27; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #1565c0,
+    #b92b27
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #1565c0,
+    #b92b27
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.compare__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  height: 400px;
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.compare__right .MuiSvgIcon-root {
+  color: #fff;
+  font-size: 10rem;
+}
+.compare__right > p {
+  color: #fff;
+  font-size: 2rem;
+}
+.compare__second {
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.comapare__img {
+  position: relative;
+  padding: 1rem;
+}
+.comapare__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.compare__secondInside {
+  position: absolute;
+  padding: 1rem 2rem;
+  top: 10%;
+  left: 5%;
+}
+.compare__secondInside > h1 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.compare__secondInside h1 span {
+  background-image: linear-gradient(#06b1f5 0%, #3791b4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  font-family: "Sigmar One";
+}
+.compare__secondInside > p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1214px) {
+  .compare__left > h1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 983px) {
+  .compare__left > h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .compare__left > h1 {
+    font-size: 2.5rem;
+  }
+  .compare__secondInside {
+    padding: 1rem;
+  }
+  .compare__secondInside p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 658px) {
+  .compare__secondInside p {
+    padding-bottom: 0.5rem;
+  }
+  .compare__secondInside h1 span {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 603px) {
+  .compare__left > h1 {
+    font-size: 2rem;
+  }
+  .compare {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: 658px) {
+  .compare__secondInside {
+    top: 0;
+  }
+  .compare__secondInside h1 {
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+  .compare__secondInside p {
+    padding-bottom: 0.3rem;
+    font-size: 0.5rem;
+  }
+  .compare__secondInside h1 span {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 323px) {
+  .compare__secondInside p {
+    padding-bottom: 0;
+    font-size: 0.4rem;
+  }
+  .compare__secondInside h1 span {
+    font-size: 1rem;
+  }
+}
